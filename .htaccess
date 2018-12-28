@@ -1,0 +1,16 @@
+<FilesMatch .*\.js.gz$>
+	ForceType text/javascript
+	Header set Content-Encoding: gzip
+	Header set Vary: Accept-Encoding
+</FilesMatch>
+<FilesMatch .*\.css.gz$>
+	ForceType text/css
+	Header set Content-Encoding: gzip
+	Header set Vary: Accept-Encoding
+</FilesMatch>
+ 
+RewriteOptions Inherit
+ReWriteCond %{HTTP:accept-encoding} (gzip.*)
+ReWriteCond %{REQUEST_FILENAME} !^.+\.gz$
+RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteRule ^(.+) $1.gz [L]

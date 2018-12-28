@@ -1,0 +1,17 @@
+body{margin: 0; background: url("../imagens/bg.png"); background-repeat: repeat; background-attachment: fixed; font: 62.5% "Trebuchet MS", sans-serif;}
+#topo, #rodape{background: url("../imagens/fundo_topo.jpg"); background-repeat: repeat-x; height: 70px;}
+#cont_topo, #box_principal, #cont_rodape{margin: 0 auto;}
+#cont_topo, #cont_rodape{width: 751px; height: 59px;}
+#box_principal{width: 763px; height: 890px; background: #ccc; display: table;	border-radius: 0px 0px 10px 10px;}
+#banner{width: 751px; height: 208px; margin-left: 6px; background: none; background: url("../imagens/banner.png"); border-bottom: none;}
+#esquerda, #direita{background: #fff; height: 675px; float: left; border-radius: 0px 0px 10px 10px;}
+#esquerda{width: 547px; margin-left: 6px;}
+#direita{width: 204px;}
+#prev_tempo{margin-top: 6px; margin-left: 2px;}
+#accordion{margin-right: 4px;}
+#btncrt{height: 30px; float: right; border: none; margin-top: 23px;}
+#MediaPlayer1{float: left; margin-top: 7px;}
+#pratocinadores{margin-bottom: -275px; height: 30px;}
+.icone{width: 24px; height: 24px; padding-top: 18px;}
+.propaganda{margin-top: 6px; margin-left: 2px; width: 198px; height: 120px; font-family: "Trebuchet MS", sans-serif; font-size: 12px; text-indent: 6px;}
+.miniatura{width: 150px; height: 140px;}

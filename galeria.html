@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Rádio Esperan&ccedil;a 98.1 FM</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Language" content="pt-BR">
+		<meta http-equiv="cache-control" content="public">
+		<meta http-equiv="expires" content="0">
+		<meta name="author" content="Marco Antoni">
+		<meta name="robots" content="noindex,nofollow">
+		<link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/stylee.css">	
+		<link href="css/smoothness/jquery-ui-1.10.1.custom.css" rel="stylesheet">
+		<script src="js/jquery-all.js"></script>
+		<script src="js/lightbox.js"></script>
+		<link href="css/lightbox.css" rel="stylesheet">
+		<script>
+			$(function() {
+				$("#accordion").accordion();
+				
+				$("#dialog").dialog({
+					autoOpen: false,
+					width: 300
+				});
+				
+				$("#dialog-link").click(function( event ) {
+					$("#dialog").dialog("open");
+					event.preventDefault();
+				});
+				
+			});			
+		</script>
+		<style>
+			a:link, a:visited{color: purple; text-decoration: none;}
+			a:hover{color: green; text-decoration: none;}
+			a img{border: none;}
+			img{border: none;}
+		</style>
+	</head>
+	<body>
+		<div id="topo">
+			<div id="cont_topo">
+				<object classid="CLSID:22D6F312-B0F6-11D0-94AB-0080C74C7E95" codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701" id="MediaPlayer1" standby="Loading Microsoft® Windows® Media Player components..." type="application/x-oleobject" width="200" align="middle" height="45">
+					<param name="FileName" value="http://200.102.152.253:8000" />
+					<param name="AutoStart" value="true" />
+					<param name="ShowStatusBar" value="True" />
+					<param name="DefaultFrame" value="mainFrame" />
+					<!-- BEGIN PLUG-IN HTML FOR FIREFOX-->
+					<!--<embed type="application/x-mplayer2" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" src="http://200.102.152.253:8000" defaultframe="rightFrame" showstatusbar="true" width="200" align="middle" height="45">-->
+					<!-- END PLUG-IN HTML FOR FIREFOX-->
+					</embed>
+				</object>
+				<!-- botao curtir-->
+				<iframe id="btncrt" src="http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/RadioEsperancaFm987&show_faces=false" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+			</div>
+		</div>
+		<div id="box_principal">
+			<div id="banner"></div>
+			<div id="esquerda">	
+				<h1>Em constru&ccedil;&atilde;o</h1>
+					<!--<a href="01.jpg" rel="lightbox[plants]" title="Click on the right side of the image to move forward."><img src="01.jpg" alt="Plants: image 1 0f 4 thumb" class="miniatura"></a>-->
+			</div>
+			<div id="direita">
+				<!-- noticias ZH -->
+				<div class="zh tipo-1" id="cp"> &nbsp; 				<style type="text/css"><!--@import url("http://www.clicrbs.com.br/widgets/noticias/css/widget.css"); -->margin-left: 2px;</style>				<script type="text/javascript" src="http://www.clicrbs.com.br/widgets/noticias/js/widget.js"></script>				<div class="topo"><div class="bg"><h2><a target="_blank" title="Zero Hora" href="http://zerohora.clicrbs.com.br/rs/">Zero Hora</a></h2><h3>Últimas notícias</h3></div></div><div rel="1,1,13,0,0,0" id="rbs_wid_not" class="ct"><p class="nresult">Carregando...</p></div><div class="b"><div class="bg"><a target="_blank" title="Notícias e esportes do RS é na ZH" class="dot" href="http://zerohora.clicrbs.com.br/rs/">Notícias do RS é na Zero Hora</a><a title="Tenha notícias no seu site" href="javascript:window.open('http://www.clicrbs.com.br/widgets/noticias/jsp/default.jspx?uf=1&amp;local=1&amp;action=wizard&amp;layout=zh','Wizard','width=620,height=595,scrollbars=yes,resizable=no');void(null);">Tenha notícias no seu site</a></div></div><img src="http://www.clicrbs.com.br/widgets/noticias/icon/empty.gif" style="display:none;" onload="widRbs.loaded(this);" /></div>
+				<!-- previsao do tempo -->
+				<iframe id="prev_tempo" src='http://selos.climatempo.com.br/selos/MostraSelo.php?CODCIDADE=4400&SKIN=padrao' scrolling='no' frameborder='0' width='150' height='170' marginheight='0' marginwidth='0'></iframe>
+				<!--<center><h1 style="background: #ccc; border-radius: 5px 0px 0px 5px; height: 30px;">Apoiadores culturais</h1></center>
+				<div class="propaganda">
+					<h2>ViaTec Manuten&ccedil;&otilde;es</h2>
+					<p>Formata&ccedil;&atilde;o/Configura&ccedil;&atilde;o, Backup de arquivos, Instala&ccedil;&atilde;o de programas,	Redes cabeades e sem fio, desenvolvimento de sites<br>
+					<p>Fone: (55) 9610-7597
+					<p>E-mail: marquinho9.10@gmail.com
+				</div>-->
+			</div>
+		</div>
+		<!-- rodape -->
+		<div id="rodape">
+			<div id="cont_rodape">
+				<p align="right">Desenvolvido por <a href="#" id="dialog-link">Marco Antoni</a> 2013
+			</div>
+		</div>
+		<div id="dialog" title="Sobre o autor">
+			<p>Marco Antoni</p>
+			<p>Fone: (55) 9610-7597</p>
+			<p>E-mail: <a href="mailto: marquinho9.10@gmail.com">marquinho9.10@gmail.com</a></p>
+		</div>
+	</body>
+</html>
